@@ -2,13 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Container, Menu, Segment } from 'semantic-ui-react'
 import { Link } from 'gatsby'
+import { toLower } from 'lodash'
 
-const HeaderMenu = ({ inverted }) => (
+const HeaderMenu = ({ activeItem, inverted }) => (
   <Segment vertical inverted={inverted} textAlign="center" className="masthead">
     <Container>
       <Menu size="large" pointing secondary inverted={inverted}>
         <Menu.Item
-          icon={{ name: 'spy', size: 'big' }}
           as={Link}
           to="/"
         >
@@ -18,21 +18,31 @@ const HeaderMenu = ({ inverted }) => (
           name="about"
           as={Link}
           to="/about/"
+          active={toLower(activeItem) === 'about'}
+        />
+        <Menu.Item
+          name="blog"
+          as={Link}
+          to="/blog/"
+          active={toLower(activeItem) === 'blog'}
         />
         <Menu.Item
           name="software"
           as={Link}
           to="/software/"
+          active={toLower(activeItem) === 'software'}
         />
         <Menu.Item
           name="publications"
           as={Link}
           to="/publications/"
+          active={toLower(activeItem) === 'publications'}
         />
         <Menu.Item
           name="contact"
           as={Link}
           to="/contact/"
+          active={toLower(activeItem) === 'contact'}
         />
         <Menu.Menu position="right">
           <Menu.Item
