@@ -8,14 +8,14 @@ import './layout.css'
 const Layout = ({ title, keywords, children }) => (
   <div>
     <SEO title={title} keywords={keywords} />
-    <HeaderMenu />
+    <HeaderMenu activeItem={title} />
     {children}
   </div>
 )
 
 Layout.propTypes = {
   title: PropTypes.string.isRequired,
-  keywords: PropTypes.arrayOf([PropTypes.string]),
+  keywords: PropTypes.arrayOf(PropTypes.string),
   children: PropTypes.node.isRequired,
 }
 
