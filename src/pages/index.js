@@ -7,7 +7,7 @@ import Layout from '../components/layout'
 
 const IndexPage = () => (
   <Layout title="Home">
-    <Segment vertical inverted textAlign="center" className="masthead">
+    <Segment vertical inverted textAlign="center">
       <Container text>
         <Header inverted as="h1">Genomics Geek Website</Header>
         <Header inverted as="h2">Genetics. Software. Bioinformatics.</Header>
