@@ -1,0 +1,28 @@
+.jumbotron.ui.container {
+  padding-top: 23%;
+  padding-bottom: 23%;
+}
+
+
+.jumbotron.ui.container .ui.header {
+  font-family: 'Coming Soon', cursive;
+}
+
+
+.jumbotron.ui.container h1.ui.header {
+  font-size: 50px;
+}
+
+
+.jumbotron.ui.container h2.ui.header {
+  font-size: 30px;
+  color: #F65314;
+}
+
+.Home.ui.segment {
+  background: url(https://s3.amazonaws.com/genomics-geek.com/computer.jpg) no-repeat center center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: scroll;
+}
