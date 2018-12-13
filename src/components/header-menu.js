@@ -4,10 +4,12 @@ import { Container, Menu, Segment } from 'semantic-ui-react'
 import { Link } from 'gatsby'
 import { toLower } from 'lodash'
 
+import './header-menu.css'
+
 const HeaderMenu = ({ activeItem, inverted }) => (
-  <Segment vertical inverted={inverted} textAlign="center" className="masthead">
+  <Segment vertical inverted={inverted} textAlign="center">
     <Container>
-      <Menu size="large" pointing secondary inverted={inverted}>
+      <Menu className="header-menu" size="large" stackable pointing secondary inverted={inverted}>
         <Menu.Item
           as={Link}
           to="/"

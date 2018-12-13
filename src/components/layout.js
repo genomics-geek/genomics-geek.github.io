@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 
 import HeaderMenu from './header-menu'
 import SEO from './seo'
-import './layout.css'
 
 const Layout = ({ title, keywords, children }) => (
   <div>
