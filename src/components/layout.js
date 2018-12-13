@@ -2,13 +2,19 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import HeaderMenu from './header-menu'
+import Footer from './footer'
 import SEO from './seo'
+
+import './layout.css'
 
 const Layout = ({ title, keywords, children }) => (
   <div>
-    <SEO title={title} keywords={keywords} />
-    <HeaderMenu activeItem={title} />
-    {children}
+    <div className="layout">
+      <SEO title={title} keywords={keywords} />
+      <HeaderMenu activeItem={title} />
+      {children}
+    </div>
+    <Footer />
   </div>
 )
 
